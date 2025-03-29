@@ -1,4 +1,5 @@
 data/
+__pycache__/
 .env
 eleven_testing.mp3
 gtts_testing.mp3

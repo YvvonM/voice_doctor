@@ -29,7 +29,7 @@ def text_to_speech_with_gtts_old(text, output_filepath_gtts):
     )
     audioobj.save(output_filepath_gtts)
 
-input_text="Hi this is Yvvon Majala!"
+input_text="Hi this is Yvvon Majala! I am a Senior AI Engineer at Samsung"
 text_to_speech_with_gtts_old(text=input_text, output_filepath_gtts="gtts_testing.mp3")
 
 #changing text to speech using elevenlabs
@@ -37,7 +37,7 @@ def text_to_speech_with_eleven_old(input_text, output_filepath_eleven):
     client = ElevenLabs(api_key= elevenlabs_api_key)
     audioobj_eleven = client.generate(
         text = input_text,
-        voice = "Aria",
+        voice = "Mark - ConvoAI",
         output_format= "mp3_22050_32",
         model = "eleven_turbo_v2"
     )
@@ -74,7 +74,7 @@ def text_to_speech_with_eleven_live(input_text, output_filepath_eleven1):
     client = ElevenLabs(api_key= elevenlabs_api_key)
     audioobj_eleven = client.generate(
         text = input_text,
-        voice = "Aria",
+        voice = "Mark - ConvoAI",
         output_format= "mp3_22050_32",
         model = "eleven_turbo_v2"
     )
